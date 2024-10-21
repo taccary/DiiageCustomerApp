@@ -6,7 +6,7 @@ namespace Caltec.StudentInfoProject.Business
     {
         public readonly StudentInfoDbContext StudentInfoDbContext;
 
-        public BaseService(StudentInfoDbContext studentInfoDbContext)
+        protected BaseService(StudentInfoDbContext studentInfoDbContext)
         {
             StudentInfoDbContext = studentInfoDbContext;
         }
