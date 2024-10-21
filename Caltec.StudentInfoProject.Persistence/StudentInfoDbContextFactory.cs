@@ -12,7 +12,6 @@ namespace Caltec.StudentInfoProject.Persistence
             string connexionString = @"";
 
 
-            //string connexionString = "tcp:trainingmanagementsqlserver.Database.windows.net:1433;Initial Catalog=TrainingManagement;Persist Security Info=False;User ID=trainingadmin;Password=DevDb2019!;MultipleActiveResultsSets=False;Encrypt=True;ConnectionTimeout=30;";
             optionsBuilder.UseSqlServer(connexionString);
 
             return new StudentInfoDbContext(optionsBuilder.Options);
